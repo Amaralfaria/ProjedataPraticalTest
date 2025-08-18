@@ -61,4 +61,9 @@ public class FuncionarioServiceImpl implements FuncionarioService{
 		return funcionarioRepository.findAll();
 	}
 
+	@Override
+	public void deleteByNome(String nome) {
+		funcionarioRepository.deleteByNome(nome);
+	}
+
 }

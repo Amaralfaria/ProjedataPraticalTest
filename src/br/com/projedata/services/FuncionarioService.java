@@ -15,4 +15,5 @@ public interface FuncionarioService {
 	BigDecimal getSumOfSalarios();
 	List<Funcionario> findAllSortedByNome();
 	List<Funcionario> findAll();
+	void deleteByNome(String nome);
 }
