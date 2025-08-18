@@ -9,4 +9,5 @@ public final class Constants {
 	public static final Integer FRACTION_DIGITS = 2;
 	public static final String DATE_TIME_PATTERN_BR = "dd/MM/yyyy";
 	public static final String LOCALE_LANGUAGE_TAG_BR = "pt-BR";
+	public static final String MINIMUM_WAGE = "1212.00";
 }

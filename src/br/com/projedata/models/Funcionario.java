@@ -4,6 +4,8 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.time.LocalDate;
 
+import br.com.projedata.utils.Constants;
+
 public class Funcionario extends Pessoa{
 	private BigDecimal salario;
 	private String funcao;
@@ -31,7 +33,7 @@ public class Funcionario extends Pessoa{
 	}
 	
 	public BigDecimal getNumberOfMinimumWages() {
-		return salario.divide(new BigDecimal("1212.00"), 2, RoundingMode.HALF_UP);
+		return salario.divide(new BigDecimal(Constants.MINIMUM_WAGE), 2, RoundingMode.HALF_UP);
 	}
 	
 	public void applySalarioRaise(BigDecimal percentual) {
